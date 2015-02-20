@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "typeahead.js": {
+      "version": "http://registry.npmjs.org/typeahead.js/-/typeahead.js-0.10.5.tgz"
+    }
+  }
+}
