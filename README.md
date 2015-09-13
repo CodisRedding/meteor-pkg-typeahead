@@ -14,11 +14,11 @@ meteor add fourq:typeahead
 Working project example.
 
 ```html
-<templaten name="something">
+<template name="something">
   <!-- The hidden field here is just to capture the selected id -->
   <input class="typeahead" name="organization" id="organization" type="text" value="{{organization}}"/>
   <input type="hidden" name="organizationId" id="organizationId" value="{{organizationId}}"/>
-</templaten>
+</template>
 
 
 <!-- Meteor template to display typeahead suggestions -->
@@ -43,7 +43,7 @@ Working project example.
 
   *Sidenote, debounce your source! Checkout the Underscore docs if you're not familiar.
 */
-Template.profile.rendered = function () {
+Template.profile.onRendered = function () {
 
   this.$('#organization').typeahead({
     hint: true,
